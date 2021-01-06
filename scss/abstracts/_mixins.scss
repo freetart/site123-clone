@@ -1,0 +1,28 @@
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: $direction;
+}
+
+@mixin sectionSpacing() {
+  padding: 5rem 2rem;
+}
+
+@mixin headingStyles() {
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+@mixin textStyles() {
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  line-height: 1.6;
+}
+
+@mixin maxWidth() {
+  max-width: 1400px;
+  margin: 0 auto;
+}
