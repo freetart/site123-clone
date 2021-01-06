@@ -1,0 +1,41 @@
+.hero {
+  height: 100vh;
+  position: relative;
+
+  &-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%);
+    background-color: color(primary);
+    z-index: -1;
+    overflow: hidden;
+  }
+
+  &-content {
+    @include maxWidth();
+    @include sectionSpacing();
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+
+    &-info {
+      h1 {
+        @include headingStyles();
+        font-size: size(xxl) + 2rem;
+      }
+
+      p {
+        @include textStyles();
+        font-size: size(xl);
+      }
+    }
+
+    &-img {
+      width: 100%;
+    }
+  }
+}
