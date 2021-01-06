@@ -1,0 +1,12 @@
+.btn-primary {
+  background-color: color(primary);
+  color: color(white);
+  font-size: size(sm);
+  padding: 1rem;
+  border-radius: 0.3rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: lighten(color(primary), 5%);
+  }
+}
