@@ -1,0 +1,38 @@
+.two-col {
+  &-content {
+    @include maxWidth();
+    @include sectionSpacing();
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    align-items: center;
+
+    .col {
+      h2 {
+        @include headingStyles();
+        color: color(grey);
+        font-size: size(xl);
+      }
+
+      p {
+        @include textStyles();
+        color: color(grey);
+        font-size: size(md);
+      }
+    }
+  }
+
+  &.bg-light {
+    background-color: color(secondary);
+  }
+
+  &.bg-dark {
+    background-color: color(tertiary);
+
+    h2,
+    p {
+      color: color(white);
+    }
+  }
+}
