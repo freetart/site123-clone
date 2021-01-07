@@ -1,0 +1,61 @@
+.footer {
+  @include maxWidth();
+  padding: 2rem 2rem;
+
+  &-top {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+
+    .footer-socials {
+      display: flex;
+      flex-direction: column;
+
+      img {
+        width: 20rem;
+      }
+
+      small {
+        @include textStyles();
+        font-size: size(xs);
+      }
+
+      i {
+        font-size: size(xxl);
+        color: color(black);
+        transition: all 0.3s ease;
+
+        &:hover {
+          color: color(primary);
+        }
+      }
+    }
+
+    .footer-links {
+      h3 {
+        @include headingStyles();
+        font-size: size(md);
+      }
+
+      li {
+        margin-bottom: 1rem;
+      }
+
+      a {
+        @include textStyles();
+        font-size: size(xs);
+        color: color(black);
+        transition: all 0.3s ease;
+
+        &:hover {
+          color: color(primary);
+        }
+      }
+    }
+  }
+
+  &-bottom {
+    text-align: center;
+    font-size: size(xs);
+  }
+}
