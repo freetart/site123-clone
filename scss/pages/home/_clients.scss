@@ -1,0 +1,48 @@
+.clients {
+  background-color: color(tertiary);
+  color: color(white);
+
+  &-content {
+    @include maxWidth();
+    @include sectionSpacing();
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+
+    &-card {
+      background-color: color(white);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      border-radius: 0.5rem;
+
+      i {
+        color: gold;
+        font-size: size(md);
+      }
+
+      p {
+        @include textStyles();
+        font-size: size(xs);
+        color: color(grey);
+      }
+
+      h2 {
+        @include headingStyles();
+        font-size: size(md);
+        color: color(grey);
+      }
+
+      .name-country {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 5rem;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

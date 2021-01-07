@@ -1,49 +1,49 @@
 .faq {
   position: relative;
   grid-template-columns: 1fr;
-}
 
-.faq-bg {
-  background-color: lighten(color(primary), 30%);
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  clip-path: polygon(0 0, 52% 53%, 100% 100%, 0% 100%);
-  z-index: -1;
-  overflow: hidden;
-  width: 100%;
-  opacity: 0.1;
-}
-
-.faq-col {
-  .faq-container {
-    margin: 3rem 0;
-    border-bottom: 0.1rem solid color(black);
-    transition: all 0.3s ease;
-    padding-bottom: 1rem;
-
-    p {
-      font-size: size(xs);
-      display: none;
-      margin: 2rem 0;
-      color: color(black);
-
-      &.active {
-        display: block;
-      }
-    }
+  .faq-bg {
+    background-color: lighten(color(primary), 30%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    clip-path: polygon(0 0, 52% 53%, 100% 100%, 0% 100%);
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    opacity: 0.1;
   }
 
-  a {
-    @include textStyles();
-    font-size: size(sm);
-    color: color(black);
-    transition: all 0.3s ease;
+  .faq-col {
+    .faq-container {
+      margin: 3rem 0;
+      border-bottom: 0.1rem solid color(black);
+      transition: all 0.3s ease;
+      padding-bottom: 1rem;
 
-    &:hover {
-      color: color(primary);
+      p {
+        font-size: size(xs);
+        display: none;
+        margin: 2rem 0;
+        color: color(black);
+
+        &.active {
+          display: block;
+        }
+      }
+    }
+
+    a {
+      @include textStyles();
+      font-size: size(sm);
+      color: color(black);
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: color(primary);
+      }
     }
   }
 }
