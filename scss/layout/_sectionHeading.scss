@@ -1,0 +1,7 @@
+.section-heading {
+  h2 {
+    @include headingStyles();
+    font-size: size(xxl);
+    text-align: center;
+  }
+}
