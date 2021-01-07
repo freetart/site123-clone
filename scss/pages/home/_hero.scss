@@ -9,10 +9,11 @@
     left: 0;
     bottom: 0;
     right: 0;
-    clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(46% 50%, 100% 0, 100% 100%, 0 100%, 0 94%);
     background-color: color(primary);
     z-index: -1;
     overflow: hidden;
+    width: 100%;
   }
 
   &-content {

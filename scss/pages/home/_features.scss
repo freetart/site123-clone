@@ -1,0 +1,30 @@
+.features {
+  background-color: color(secondary);
+
+  &-content {
+    @include maxWidth();
+    @include sectionSpacing();
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 4rem;
+
+    .feature {
+      i {
+        font-size: size(xxl) + 1rem;
+        color: color(primary);
+      }
+
+      h3 {
+        @include headingStyles();
+        font-size: size(lg);
+      }
+
+      p {
+        @include textStyles();
+        font-size: size(xs);
+        color: color(grey);
+      }
+    }
+  }
+}
