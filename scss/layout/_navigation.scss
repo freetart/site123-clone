@@ -29,9 +29,14 @@
     }
 
     .btn-primary {
+      color: color(white);
       @include responsive(lg) {
         display: none;
       }
     }
+  }
+
+  .current {
+    color: color(primary) !important;
   }
 }
