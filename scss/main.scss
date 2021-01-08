@@ -15,13 +15,15 @@
 @import "layout/grid";
 @import "layout/footer";
 @import "layout/hamburgerMenu";
+@import "layout/faq";
+@import "layout/clients";
 
 // Pages
 @import "pages/home/hero";
 @import "pages/home/templates";
 @import "pages/home/features";
-@import "pages/home/faq";
-@import "pages/home/clients";
+
+@import "pages/pricing/subhero";
 
 // Themes
 

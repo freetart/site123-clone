@@ -1,0 +1,23 @@
+.sub-hero {
+  background-color: color(primary);
+
+  &-content {
+    @include maxWidth();
+    @include sectionSpacing();
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+
+    h1 {
+      @include headingStyles();
+      font-size: size(xxl) + 2rem;
+      color: color(white);
+    }
+
+    p {
+      @include textStyles();
+      font-size: size(xl);
+      color: color(white);
+    }
+  }
+}
