@@ -8,6 +8,10 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
 
+    @include responsive(xxl) {
+      grid-template-columns: 1fr;
+    }
+
     h1 {
       @include headingStyles();
       font-size: size(xxl) + 2rem;
