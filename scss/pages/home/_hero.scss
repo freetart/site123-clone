@@ -3,12 +3,10 @@
   position: relative;
   box-shadow: 0.4rem 0.4rem 1rem #f2f2f2;
   margin-top: 5rem;
+  overflow: hidden;
 
   @include responsive(lg) {
     height: auto;
-  }
-
-  @include responsive(lg) {
     margin-top: 0;
   }
 

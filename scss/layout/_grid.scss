@@ -1,4 +1,6 @@
 .two-col {
+  overflow: hidden;
+
   &-content {
     @include maxWidth();
     @include sectionSpacing();

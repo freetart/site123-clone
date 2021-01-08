@@ -1,6 +1,7 @@
 .faq {
   position: relative;
   grid-template-columns: 1fr;
+  overflow: hidden;
 
   .faq-bg {
     background-color: lighten(color(primary), 30%);
