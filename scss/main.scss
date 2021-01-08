@@ -17,15 +17,13 @@
 @import "layout/hamburgerMenu";
 @import "layout/faq";
 @import "layout/clients";
+@import "layout/subhero";
 
 // Pages
 @import "pages/home/hero";
 @import "pages/home/templates";
 @import "pages/home/features";
 
-@import "pages/pricing/subhero";
 @import "pages/pricing/prices";
 
-// Themes
-
-// Vendors
+@import "pages/reviews/banner";

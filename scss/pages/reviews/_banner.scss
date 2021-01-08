@@ -1,0 +1,14 @@
+.banner {
+  background-color: color(secondary);
+
+  &-content {
+    @include flexCenter(column);
+    @include maxWidth();
+    @include sectionSpacing();
+
+    h2 {
+      @include headingStyles();
+      font-size: size(xxl);
+    }
+  }
+}
