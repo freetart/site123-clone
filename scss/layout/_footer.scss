@@ -7,6 +7,15 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 
+    @include responsive(xxl) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include responsive(md) {
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
+
     .footer-socials {
       display: flex;
       flex-direction: column;
@@ -21,7 +30,7 @@
       }
 
       i {
-        font-size: size(xxl);
+        font-size: size(lg);
         color: color(black);
         transition: all 0.3s ease;
 

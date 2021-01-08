@@ -8,6 +8,16 @@
     gap: 4rem;
     align-items: center;
 
+    @include responsive(xl) {
+      grid-template-columns: 1fr;
+    }
+
+    .col-info {
+      @include responsive(xl) {
+        order: -1;
+      }
+    }
+
     .col {
       h2 {
         @include headingStyles();

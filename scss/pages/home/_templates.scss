@@ -9,6 +9,14 @@
       align-items: center;
       gap: 4rem;
 
+      @include responsive(xl) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include responsive(md) {
+        grid-template-columns: 1fr;
+      }
+
       a {
         transition: all 0.3s ease;
 

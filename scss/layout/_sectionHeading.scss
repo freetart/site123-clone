@@ -3,5 +3,10 @@
     @include headingStyles();
     font-size: size(xxl);
     text-align: center;
+
+    @include responsive(sm) {
+      text-align: center;
+      width: 100%;
+    }
   }
 }

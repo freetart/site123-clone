@@ -9,6 +9,10 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
 
+    @include responsive(xl) {
+      grid-template-columns: 1fr;
+    }
+
     &-card {
       background-color: color(white);
       padding: 2rem;

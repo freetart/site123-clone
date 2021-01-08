@@ -19,8 +19,18 @@
       color: color(black);
       transition: all 0.3s ease;
 
+      @include responsive(lg) {
+        display: none;
+      }
+
       &:hover {
         color: color(primary);
+      }
+    }
+
+    .btn-primary {
+      @include responsive(lg) {
+        display: none;
       }
     }
   }
