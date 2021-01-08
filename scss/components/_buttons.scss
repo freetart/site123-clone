@@ -10,3 +10,9 @@
     background-color: lighten(color(primary), 5%);
   }
 }
+
+.btn-secondary {
+  @extend .btn-primary;
+
+  width: 100%;
+}

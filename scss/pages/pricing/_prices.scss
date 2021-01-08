@@ -1,0 +1,52 @@
+.prices {
+  &-content {
+    @include maxWidth();
+    @include sectionSpacing();
+    @include flexCenter(row);
+    gap: 4rem;
+
+    &-card {
+      padding: 5rem 10rem;
+      box-shadow: 0 0.4rem 1rem #c7c7c7;
+      border-radius: 1rem;
+
+      h3 {
+        @include headingStyles();
+        font-size: size(lg);
+      }
+
+      h4 {
+        @include headingStyles();
+        font-size: size(md);
+      }
+
+      .price {
+        @include flexCenter(row);
+
+        i {
+          font-size: size(xxl);
+          color: color(primary);
+        }
+
+        p {
+          font-size: size(xxl);
+          color: color(primary);
+        }
+
+        small {
+          font-size: size(sm);
+        }
+      }
+
+      .prices-features {
+        display: flex;
+        flex-direction: column;
+
+        small {
+          @include textStyles();
+          font-size: size(md);
+        }
+      }
+    }
+  }
+}
